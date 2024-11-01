@@ -11,6 +11,10 @@ public class PhoneNumberExample {
         System.out.print("Enter your phone number: ");
         String email = new Scanner(System.in).nextLine();
 
+
+
+
+
         Pattern pattern = Pattern.compile("\\+998\\s?\\(?\\d{2}\\)?\\s?\\d{3}\\s?\\d{2}\\s?\\d{2}");
         Matcher matcher = pattern.matcher(email);
         if (matcher.find()) {
